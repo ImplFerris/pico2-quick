@@ -5,7 +5,6 @@
 #![no_std]
 #![no_main]
 
-use defmt::info;
 use embassy_executor::Spawner;
 use embassy_rp::gpio;
 use embassy_time::Timer;
@@ -31,11 +30,9 @@ async fn main(_spawner: Spawner) {
     let mut led = Output::new(p.PIN_25, Level::Low);
 
     loop {
-        info!("led on!");
         led.set_high();
         Timer::after_millis(250).await;
 
-        info!("led off!");
         led.set_low();
         Timer::after_millis(250).await;
     }
