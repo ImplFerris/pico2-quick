@@ -1,5 +1,5 @@
 [package]
-name = "pico-quick"
+name = "pico2-quick"
 version = "0.2.0"
 edition = "2024"
 
@@ -18,8 +18,9 @@ embassy-rp = { version = "0.8.0", features = [
   "rp235xa",
   "binary-info",
 ] }
+
 cortex-m = { version = "0.7.6" }
-cortex-m-rt = "0.7.0"
+cortex-m-rt = "0.7.5"
 
 defmt = "1.0.1"
 defmt-rtt = "1.0"
