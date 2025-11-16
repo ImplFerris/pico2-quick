@@ -9,7 +9,7 @@ embassy-executor = { version = "0.9", features = [
   "executor-thread",
   "defmt",
 ] }
-panic-probe = { version = "1.0" }
+panic-probe = { version = "1.0", features = ["print-defmt"] }
 embassy-time = { version = "0.5.0" }
 embassy-rp = { version = "0.8.0", features = [
   "defmt",
